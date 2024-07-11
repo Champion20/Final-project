@@ -1,5 +1,5 @@
 --- 
-title: "CHILD MORTALITY RATE,UNDER AGE FIVE 2018"
+title: "CHILD MORTALITY RATE,2018"
 author: "Rosaline Pineteh"
 format: 
   dashboard:
@@ -126,7 +126,8 @@ child_map <- child_countries %>%
   theme(legend.position = "none")
 
 child_map_plotly <- ggplotly(child_map, tooltip= "text") %>% 
-  layout(annotations= list(text= "Source: Gapminder, source_url:http://gapm.io/du5mr", x=1, y=0, 
+  layout(annotations= list(text= "Source: Gapminder, source_url:http://gapm.io/du5mr", 
+                           x=1, y=0, 
                            xref= 'paper', yref= 'paper',
                            xanchor= 'right', yanchor = 'bottom',
                            showarrow= FALSE))
@@ -231,20 +232,20 @@ plot_child_top_10_plotly
 child_map_plotly
 ```
 
-# CHILD MORTALITY TRENDS: 
+# CHILD MORTALITY TRENDS
 
 ## Row 1{height=100%}
 
 ### {width=60%}
 
-```{r title = "Trend of Child Mortality in Top 5 Countries with Highest Child Mortality: 2008-2018"}
+```{r title = "Child Mortality Trend in Top 5 Countries with Highest Child Mortality: 2008-2018"}
 
 child_plot_trend_plotly
 ```
 
 ### {width=40%}
 
-```{r title = "Trend of Child Mortality in Top 5 Countries with Lowest Child Mortality: 2008-2018"}
+```{r title = "TChild Mortality Trend in Top 5 Countries with Lowest Child Mortality: 2008-2018"}
 
 child_plot_trend_low_plotly
 ```
