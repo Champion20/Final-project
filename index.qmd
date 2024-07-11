@@ -1,5 +1,5 @@
 --- 
-title: "CHILD MORTALITY RATE,2018"
+title: "GAPMINDER |CHILD MORTALITY RATE 2018"
 author: "Rosaline Pineteh"
 format: 
   dashboard:
@@ -16,19 +16,20 @@ execute:
 ```{r }
 # Load packages 
 if(!require(pacman)) install.packages("pacman")
-pacman::p_load(tidyverse, 
-               here,
-               sf,
-               bslib, 
-               bsicons,
-               rnaturalearth, 
-               plotly, 
-               countrycode, 
-               htmltools, 
-               reactable,
-               janitor, 
-               gapminder,
-               shiny
+pacman::p_load("tidyverse", 
+               "here",
+               "sf",
+               "bslib", 
+               "bsicons",
+               "rnaturalearth", 
+               "plotly", 
+               "countrycode", 
+               "htmltools", 
+               "reactable",
+               "janitor", 
+               "gapminder",
+               "shiny",
+               "shinydashboard"
                )
 ```
 
