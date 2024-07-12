@@ -13,29 +13,16 @@ execute:
   message: false
 ---
 
-```{r }
+```{r}
 # Load packages 
 if(!require(pacman)) install.packages("pacman")
-pacman::p_load("tidyverse", 
-               "here",
-               "sf",
-               "bslib", 
-               "bsicons",
-               "rnaturalearth", 
-               "plotly", 
-               "countrycode", 
-               "htmltools", 
-               "reactable",
-               "janitor", 
-               "gapminder",
-               "shiny",
-               "shinydashboard"
-               )
-```
+pacman::p_load("tidyverse", "here","sf","bslib", "bsicons","rnaturalearth",  "plotly", "countrycode", "htmltools", "reactable","janitor", "gapminder","shiny","shinydashboard")
 
-```{r}
+```
 # Data Munging
 
+
+```{r} 
 child <- read_csv(here("Data/child_mortality_0_5_year_olds_dying_per_1000_born.csv"))
 
 child_18 <- child %>% 
@@ -284,9 +271,3 @@ Gapminder was founded in 2005 by Ola Rosling, Anna Rosling Rönnlund, and Hans R
 An example of one of Hans Roslins video is shown below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hVimVzgtD6w?si=euSx16QgKNs1AY_R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-
-
-
