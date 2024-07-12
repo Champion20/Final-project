@@ -171,6 +171,7 @@ child_plot_trend <- pivot_child %>%
   geom_line() +
   labs(x = "Year",
        y = "Child Mortality Rate") +
+    scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
   theme_minimal() +
   theme(legend.title = element_blank())
 
@@ -202,6 +203,7 @@ child_plot_trend_low <- pivot_child_low %>%
   geom_line() +
   labs(x = "Year",
        y = "Child Mortality Rate") +
+  scale_x_continuous(labels = scales::number_format(accuracy = 1)) +
   theme_minimal() +
   theme(legend.title = element_blank())
 
